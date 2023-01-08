@@ -1,10 +1,13 @@
+# Imports random module to use later in script
 import random
 
+# Declaring variables for use in if statement below
 name = "Pudgers"
 question = "Will we win the HGTV Dream Home?"
 answer = ""
 random_number = random.randint(1, 9)
 
+# If statement to determine answer from Magic 8 Ball
 if random_number == 1:
   answer = "Yes - definitely."
 elif random_number == 2:
@@ -26,5 +29,6 @@ elif random_number == 9:
 else:
   answer = "Error"
 
+# Prints results of submission and answer
 print(name + " asks: " + question)
 print("Magic 8-Ball's answer: " + answer)
